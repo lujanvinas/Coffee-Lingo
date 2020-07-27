@@ -14,27 +14,34 @@
     
 </head>
 <body>
-        <div class="containerArrow arrowLeft">
-            <img src="./assets/arrowLeft.png" class="prev" alt=Prev">
-        </div>
-        <div class="menu">
-            <ul>
-                <li><a href="#espresso">espresso</a>
-                <li><a href="#americano">americano</a>
-                <li><a href="#latte">latte</a>
-                <li><a href="#capuccino">capuccino</a>
-                <li><a href="#machiatto">machiatto</a>
-            </ul>
-        </div>
-        <div class="containerSlider">
-            <div class="slide home active">
-                <div class="slideContent">
-                    <h1>Hey, Web Developer<span>[Do you know your coffee?]</span></h1>
-                </div>
+    <div class="containerArrow arrowLeft">
+        <img src="./assets/arrowLeft.png" class="prev" alt=Prev">
+    </div>
+
+    <div class="containerSlider">
+        <div class="slide home active">
+            <div class="slideContent">
+                <h1>Hey, Web Developer<span>[Do you know your coffee?]</span></h1>
             </div>
-            <div class="slide slide1">
-                <div class="slideContent">
+            <div class="menu">
+                <ul>
+                    <li><a href="#espresso">espresso</a>
+                    <li><a href="#americano">americano</a>
+                    <li><a href="#latte">latte</a>
+                    <li><a href="#capuccino">capuccino</a>
+                    <li><a href="#machiatto">machiatto</a>
+                </ul>
+            </div>
+        </div>
+    
+  
+
+        <div class="slide slide1">
+            <div class="slideContent">
+                <div class="title">
                     <h2>Espresso</h2>
+                </div>
+                <div class="description">
                     <p class="text-focus-in">Straight and simple. A full-flavored, concentrated form of coffee that is served in single or double shots.</p>
                 </div>
                 <div class="buttons">
@@ -42,23 +49,41 @@
                     <i class="fas fa-video"></i>
                     <i class="fas fa-home"></i>
                 </div>
-            </div>
-
-            <div class="slide slide2">
-                <div class="slideContent">
-                    <h2>Americano</h2>
-                    <p class="text-focus-in">A watered-down single or double espresso, literally.</p>
+                <div class="videoPopup">
+                    <div class="close">x</div>
+                    <video src="./assets/espresso2.mp4" controls muted autoplay height="500" width="800" class="video">Your browser does not support the video element.</video>
                 </div>
+            </div>
+        </div>
+
+
+        <div class="slide slide2">
+            <div class="slideContent">
+                <div class="title">
+                    <h2>Americano</h2>
+                </div>
+                <div class="description">
+                    <p class="text-focus-in">A watered-down single or double espresso, literally.</p>
+                </div> 
                 <div class="buttons">
                     <i class="fas fa-info"></i>
                     <i class="fas fa-video"></i>
                     <i class="fas fa-home"></i>
                 </div>
+                <div class="videoPopup">
+                    <div class="close">x</div>
+                    <video src="./assets/americano.mp4" controls muted autoplay height="500" width="800" class="video">Your browser does not support the video element.</video>
+                </div>
             </div>
-            
-            <div class="slide slide3">
-                <div class="slideContent">
+        </div>       
+                
+
+        <div class="slide slide3">
+            <div class="slideContent">
+                <div class="title">
                     <h2>Latte</h2>
+                </div>
+                <div class="description">
                     <p class="text-focus-in">Usually two shots of espresso served in a big mug, complete with steamed milk and a bit of foam.</p>
                 </div>
                 <div class="buttons">
@@ -66,10 +91,20 @@
                     <i class="fas fa-video"></i>
                     <i class="fas fa-home"></i>
                 </div>
+                <div class="videoPopup">
+                    <div class="close">x</div>
+                    <video src="./assets/latte.mp4" controls muted autoplay height="500" width="800" class="video">Your browser does not support the video element.</video>
+                </div>
             </div>
-            <div class="slide slide4">
-                <div class="slideContent">
+        </div>
+
+
+        <div class="slide slide4">
+            <div class="slideContent">
+                <div class="title">
                     <h2>Capuccino</h2>
+                </div>
+                <div class="description">
                     <p class="text-focus-in">Double shot of espresso, steamed milk and a lot of foam.</p>
                 </div>
                 <div class="buttons">
@@ -77,22 +112,36 @@
                     <i class="fas fa-video"></i>
                     <i class="fas fa-home"></i>
                 </div>
+                <div class="videoPopup">
+                    <div class="close">x</div>
+                    <video src="./assets/capuccino.mp4" controls muted autoplay height="500" width="800" class="video">Your browser does not support the video element.</video>
+                </div>
             </div>
-            <div class="slide slide5">
-                <div class="slideContent">
+        </div>
+
+        <div class="slide slide5">
+            <div class="slideContent">
+                <div class="title">
                     <h2>Macchiato</h2>
+                </div>
+                <div class="description">
                     <p class="text-focus-in">"Stained" in Italian. Add a splash of steamed milk to a single or double espresso.</p>
                 </div>
-                <div class="buttons">
+                    <div class="buttons">
                     <i class="fas fa-info"></i>
                     <i class="fas fa-video"></i>
                     <i class="fas fa-home"></i>
                 </div>
-            </div>        
-        </div>
-        <div class="containerArrow arrowRight">
-            <img src="./assets/arrowRight.png" class="next heartbeat" alt=Next">
-        </div>
+                <div class="videoPopup">
+                    <div class="close">x</div>
+                    <video src="./assets/macchiato.mp4" controls muted autoplay height="500" width="800" class="video">Your browser does not support the video element.</video>
+                </div>
+            </div>
+        </div>       
+    </div> 
+    <div class="containerArrow arrowRight">
+        <img src="./assets/arrowRight.png" class="next heartbeat" alt=Next">
+    </div>
 
        
 </body>
