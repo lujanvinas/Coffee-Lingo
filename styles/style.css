@@ -229,6 +229,28 @@ body,
   position: relative;
 }
 
+.home {
+  background-image: url("../assets/home.jpg");
+  display: inline-block;
+}
+
+.home h1 {
+  color: white;
+  font-size: 5rem;
+  line-height: 90px;
+  text-align: center;
+  display: block;
+  margin: 0 auto;
+  padding: 0;
+  font-family: 'Poiret One', cursive;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 80px 0;
+}
+
+.home h1 span {
+  display: inline-block;
+}
+
 .slideContent {
   width: 80%;
   height: 100vh;
@@ -286,11 +308,29 @@ body,
   line-height: 50px;
 }
 
-.videoPopup {
+.moreInfo {
+  background-color: rgba(0, 0, 0, 0.5);
+  width: 90%;
+  margin: 0 auto;
+  padding: 60px;
+  border: 2px solid turquoise;
+  line-height: 50px;
   position: relative;
 }
 
-.videoPopup .close {
+.moreInfo p {
+  color: white;
+  font-size: 1.6rem;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.videoPopup {
+  position: relative;
+  margin: 0 auto;
+}
+
+.close,
+.closeInfo {
   position: absolute;
   padding: 5px;
   top: -30px;
@@ -301,30 +341,12 @@ body,
   font-family: 'Open Sans', sans-serif;
 }
 
+.closeInfo {
+  top: -60px;
+}
+
 .close:hover {
   color: white;
-}
-
-.home {
-  background-image: url("../assets/home.jpg");
-  display: inline-block;
-}
-
-.home h1 {
-  color: white;
-  font-size: 5rem;
-  line-height: 90px;
-  text-align: center;
-  display: block;
-  margin: 0 auto;
-  padding: 0;
-  font-family: 'Poiret One', cursive;
-  background-color: rgba(0, 0, 0, 0.5);
-  padding: 80px 0;
-}
-
-.home h1 span {
-  display: inline-block;
 }
 
 .slide1 {

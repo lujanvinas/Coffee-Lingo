@@ -9,16 +9,40 @@ body,
     width:100%;
     height:100vh;
 }
-
-
 .slide {
-    background-size:cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    display:none;
-    position:relative;
-    // initially hidding all the backgrounds
+  background-size:cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display:none;
+  position:relative;
+  // initially hidding all the backgrounds
 }
+
+
+.home {
+  background-image: url('../assets/home.jpg'); 
+  display:inline-block;
+  // initially displaying the active background only
+
+h1 {
+    color:white;
+    font-size: 5rem;
+    line-height: 90px;
+    text-align: center;
+    display: block;
+    margin:0 auto;
+    padding:0;
+    font-family: 'Poiret One', cursive;
+    background-color:rgba(00, 00, 00, 0.5);
+    padding:80px 0;
+
+    span{
+        display: inline-block;
+    }
+  } 
+}
+
+
 
 .slideContent{
     width:80%;
@@ -83,49 +107,51 @@ body,
     }
 }
 
+
+.moreInfo {
+    background-color:rgba(00, 00, 00, 0.5);
+    width: 90%;
+    margin: 0 auto;
+    padding: 60px;
+    border: 2px solid turquoise;
+    line-height: 50px;
+    position:relative;
+    
+    p{
+      color: white;
+      font-size: 1.6rem;
+      font-family: 'Open Sans', sans-serif;
+      
+      }
+}
+
+
 .videoPopup {
     position:relative;
-
-    .close{
-      position: absolute;
-      padding: 5px;
-      top: -30px;
-      right: -6px;
-      font-size: 1.8rem;
-      color:grey;
-      cursor:pointer;
-      font-family: 'Open Sans', sans-serif;
-    }
+    margin:0 auto;
+}
+  
+.close,
+.closeInfo{
+  position: absolute;
+  padding: 5px;
+  top: -30px;
+  right: -6px;
+  font-size: 1.8rem;
+  color:grey;
+  cursor:pointer;
+  font-family: 'Open Sans', sans-serif;
 
 }
+
+.closeInfo{
+  top:-60px;
+ 
+}
+
 
 .close:hover{
   color:white;
-}
-
-
-
-.home {
-  background-image: url('../assets/home.jpg'); 
-  display:inline-block;
-  // initially displaying the active background only
-
-  h1 {
-      color:white;
-      font-size: 5rem;
-      line-height: 90px;
-      text-align: center;
-      display: block;
-      margin:0 auto;
-      padding:0;
-      font-family: 'Poiret One', cursive;
-      background-color:rgba(00, 00, 00, 0.5);
-      padding:80px 0;
-
-      span{
-          display: inline-block;
-      }
-  } 
 }
 
 

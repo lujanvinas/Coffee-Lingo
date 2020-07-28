@@ -4,6 +4,8 @@ $(document).ready(function(){
     $('.next').on('click', function(){
     const currentSlide = $('.active');
     const nextSlide = currentSlide.next();
+
+
       
     if(nextSlide.length){
         currentSlide.removeClass('active').css('display', "none");
@@ -12,17 +14,17 @@ $(document).ready(function(){
     });
 
     $('.prev').on('click', function(){
-        const currentSlide = $('.active');
-        const prevSlide = currentSlide.prev();
-        
-        if(prevSlide.length){
-            currentSlide.removeClass('active').css('display', "none");
-            prevSlide.addClass('active').css('display', "block");
-            }
-        });
+    const currentSlide = $('.active');
+    const prevSlide = currentSlide.prev();
+    
+    if(prevSlide.length){
+        currentSlide.removeClass('active').css('display', "none");
+        prevSlide.addClass('active').css('display', "block");
+        }
+    });
 
 
-    // video and moreInfo will not display at first 
+    // video pop up and details: hidden first
     $('.videoPopup').hide();
     $('.moreInfo').hide();
 
@@ -32,7 +34,8 @@ $(document).ready(function(){
         $('.description').hide();
         $('.buttons').hide();
         $('.next').hide();
-        $('title').css('width', "100%");
+        $('.prev').hide();
+        $('h2').hide();
     });
 
     $('.close').on('click', function(){
@@ -40,11 +43,28 @@ $(document).ready(function(){
         $('.description').show();
         $('.buttons').show();
         $('.next').show();
+        $('.prev').show();
+        $('h2').show();
     })
-    // listen to a click event that will display more info
+    // listen to a click event that will display details
     $('.fa-info').on('click', function(){
-        $('.moreInfo').toggle();
-    });
+        $('.moreInfo').show();
+        $('.description').hide();
+        $('.buttons').hide();
+        $('.next').hide();
+        $('.prev').hide();
+        $('h2').hide();
+
+
+    $('.closeInfo').on('click', function(){
+        $('.moreInfo').hide();
+        $('.description').show();
+        $('.buttons').show();
+        $('.next').show();
+        $('.prev').show();
+        $('h2').show();
+    })
+});
 
     // listen to a click event that will take the user back to the home page
     $('.fa-home').on('click', function(){
