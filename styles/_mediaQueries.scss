@@ -1,0 +1,64 @@
+// mediaQueries
+
+
+@media(max-width:915px){
+
+
+    .slideContent{
+        width:80%;
+        text-align: center;
+        display: block;
+        padding:50px;
+        
+    }
+
+
+    h1{
+      font-size: 4rem;
+     
+    }
+
+    .description {
+        width: 100%;
+        
+    }
+
+    p{
+        text-align: center;
+        font-size: 1.5rem;
+        
+    }
+
+    .title h2{
+        width:100%;
+        padding-top:100px;
+        text-align:center;
+           
+    }
+
+    .moreInfo {
+      width: 100%;
+      margin: 0 auto;
+      padding: 30px;
+
+      
+      p{
+      
+        font-size: 1.4rem;
+        }
+      
+    }
+
+    .slideContent .icon{
+      text-align: center;
+      padding-top:80px;
+      margin:0 auto;
+
+      i{
+        padding: 0 40px;
+        text-align: center;
+        margin:0 auto;
+      }
+    }
+ 
+  }

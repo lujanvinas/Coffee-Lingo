@@ -1,0 +1,134 @@
+// Global variables
+
+h1, 
+h2 {
+    color: $light;
+    font-size: 5rem;
+    font-family: $base-font;
+}
+
+h1{
+    line-height: 90px;
+    display: block;
+    margin:0 auto;
+    padding:0;
+    padding:80px 0;
+
+} 
+
+h2 {
+    padding-bottom: 50px;
+    font-weight: bold;   
+    letter-spacing: 3px;  
+    text-align: right;
+}
+
+h3 {
+    color: $light;
+    font-size: 2.5rem;
+    font-family: $base-font;
+}
+
+
+
+p {
+    font-family: $alt-font;
+    color:$light;
+    font-size: 1.7rem;
+    display: block;
+    padding-top: 50px;
+    line-height: 50px;
+    
+}
+
+
+.header {
+    margin: 0 auto;   
+    width: 100%;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.text-left {
+    text-align: left;
+}
+
+.text-right {
+    text-align: right;
+}
+
+.icon{
+    text-align: right;
+    width: 100%;
+    padding-top:60px;
+
+    i{
+    padding-left: 50px;
+    font-size: 1.8rem;
+    color: $blue;
+    cursor: pointer;
+    }
+}
+
+
+.icon i:hover {
+    color: $light;
+}
+
+
+.containerSelection {
+    margin: 0 auto;
+    border-radius: 10px; 
+
+}
+    
+.btn {
+    font-size: 25px;
+    padding: 20px 50px;
+    border-radius: 10px;
+    border: none;
+    font-family: $alt-font;
+    position: relative;
+
+    &:hover{
+        background-color: $blue;
+    }
+    
+    span {
+        text-align: left;
+        position: absolute;
+        right: 10px;
+    }
+}
+
+// .btnTour {
+//     // width: 30%;
+//     p
+// }
+
+
+.dropdown {
+    background-color: $light;
+    border-radius: 0 0 10px 10px;
+
+}
+
+li {
+    list-style: none;    
+    padding: 20px;
+    font-size: 25px;
+    
+    &:hover {
+        color: $blue;
+        cursor: pointer;
+    }
+
+    
+}
+
+
+
+
+

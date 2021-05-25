@@ -212,6 +212,159 @@ textarea {
   overflow: hidden;
 }
 
+h1,
+h2 {
+  color: white;
+  font-size: 5rem;
+  font-family: "Poiret One", cursive;
+}
+
+h1 {
+  line-height: 90px;
+  display: block;
+  margin: 0 auto;
+  padding: 0;
+  padding: 80px 0;
+}
+
+h2 {
+  padding-bottom: 50px;
+  font-weight: bold;
+  letter-spacing: 3px;
+  text-align: right;
+}
+
+h3 {
+  color: white;
+  font-size: 2.5rem;
+  font-family: "Poiret One", cursive;
+}
+
+p {
+  font-family: "Open Sans", sans-serif;
+  color: white;
+  font-size: 1.7rem;
+  display: block;
+  padding-top: 50px;
+  line-height: 50px;
+}
+
+.header {
+  margin: 0 auto;
+  width: 100%;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-left {
+  text-align: left;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.icon {
+  text-align: right;
+  width: 100%;
+  padding-top: 60px;
+}
+
+.icon i {
+  padding-left: 50px;
+  font-size: 1.8rem;
+  color: turquoise;
+  cursor: pointer;
+}
+
+.icon i:hover {
+  color: white;
+}
+
+.containerSelection {
+  margin: 0 auto;
+  border-radius: 10px;
+}
+
+.btn {
+  font-size: 25px;
+  padding: 20px 50px;
+  border-radius: 10px;
+  border: none;
+  font-family: "Open Sans", sans-serif;
+  position: relative;
+}
+
+.btn:hover {
+  background-color: turquoise;
+}
+
+.btn span {
+  text-align: left;
+  position: absolute;
+  right: 10px;
+}
+
+.dropdown {
+  background-color: white;
+  border-radius: 0 0 10px 10px;
+}
+
+li {
+  list-style: none;
+  padding: 20px;
+  font-size: 25px;
+}
+
+li:hover {
+  color: turquoise;
+  cursor: pointer;
+}
+
+@media (max-width: 915px) {
+  .slideContent {
+    width: 80%;
+    text-align: center;
+    display: block;
+    padding: 50px;
+  }
+  h1 {
+    font-size: 4rem;
+  }
+  .description {
+    width: 100%;
+  }
+  p {
+    text-align: center;
+    font-size: 1.5rem;
+  }
+  .title h2 {
+    width: 100%;
+    padding-top: 100px;
+    text-align: center;
+  }
+  .moreInfo {
+    width: 100%;
+    margin: 0 auto;
+    padding: 30px;
+  }
+  .moreInfo p {
+    font-size: 1.4rem;
+  }
+  .slideContent .icon {
+    text-align: center;
+    padding-top: 80px;
+    margin: 0 auto;
+  }
+  .slideContent .icon i {
+    padding: 0 40px;
+    text-align: center;
+    margin: 0 auto;
+  }
+}
+
 body,
 .slide,
 .containerSlider {
@@ -229,26 +382,14 @@ body,
   position: relative;
 }
 
+.homeContainer {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.7)), to(rgba(0, 0, 0, 0.1)));
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.1));
+}
+
 .home {
   background-image: url("../assets/home.jpg");
-  display: inline-block;
-}
-
-.home h1 {
-  color: white;
-  font-size: 5rem;
-  line-height: 90px;
-  text-align: center;
   display: block;
-  margin: 0 auto;
-  padding: 0;
-  font-family: 'Poiret One', cursive;
-  background-color: rgba(0, 0, 0, 0.5);
-  padding: 80px 0;
-}
-
-.home h1 span {
-  display: inline-block;
 }
 
 .slideContent {
@@ -258,54 +399,21 @@ body,
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -ms-flex-line-pack: center;
-      align-content: center;
-}
-
-.slideContent .buttons {
-  text-align: right;
-  width: 100%;
-  padding-top: 60px;
-}
-
-.slideContent .buttons i {
-  padding-left: 50px;
-  font-size: 1.8rem;
-  color: turquoise;
-  cursor: pointer;
-}
-
-.buttons i:hover {
-  color: white;
-}
-
-.title h2 {
-  color: white;
-  font-size: 5rem;
-  font-family: 'Poiret One', cursive;
-  padding-bottom: 50px;
-  font-weight: bold;
-  letter-spacing: 3px;
-  text-align: right;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .description {
   width: 60%;
   border-top: 2px solid turquoise;
-}
-
-.description p {
-  font-family: 'Open Sans', sans-serif;
-  color: white;
-  font-size: 1.7rem;
-  display: block;
-  padding-top: 50px;
-  line-height: 50px;
 }
 
 .moreInfo {
@@ -321,7 +429,7 @@ body,
 .moreInfo p {
   color: white;
   font-size: 1.5rem;
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
   margin: 15px 0;
 }
 
@@ -339,7 +447,7 @@ body,
   font-size: 1.8rem;
   color: grey;
   cursor: pointer;
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
 }
 
 .closeInfo {
@@ -381,7 +489,7 @@ body,
   top: 50%;
   cursor: pointer;
   z-index: 99;
-  background-color: transparent;
+  background-color: white;
   border: 1px solid white;
   border-radius: 25px;
   padding: 4px;
@@ -524,48 +632,6 @@ body,
     -webkit-filter: blur(0px);
     filter: blur(0px);
     opacity: 1;
-  }
-}
-
-@media (max-width: 915px) {
-  .slideContent {
-    width: 80%;
-    text-align: center;
-    display: block;
-    padding: 50px;
-  }
-  .home h1 {
-    font-size: 4rem;
-  }
-  .description {
-    width: 100%;
-  }
-  p {
-    text-align: center;
-    font-size: 1.5rem;
-  }
-  .title h2 {
-    width: 100%;
-    padding-top: 100px;
-    text-align: center;
-  }
-  .moreInfo {
-    width: 100%;
-    margin: 0 auto;
-    padding: 30px;
-  }
-  .moreInfo p {
-    font-size: 1.4rem;
-  }
-  .slideContent .buttons {
-    text-align: center;
-    padding-top: 80px;
-    margin: 0 auto;
-  }
-  .slideContent .buttons i {
-    padding: 0 40px;
-    text-align: center;
-    margin: 0 auto;
   }
 }
 /*# sourceMappingURL=style.css.map */

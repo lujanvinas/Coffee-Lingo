@@ -1,4 +1,7 @@
 @import "setup";
+@import "variables";
+@import "global";
+@import "mediaQueries";
 
 
 body,
@@ -18,87 +21,34 @@ body,
   position:relative;
 }
 
+.homeContainer {
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.1));
 
-.home {
-  background-image: url('../assets/home.jpg'); 
-  display:inline-block;
-
-
-h1 {
-    color:white;
-    font-size: 5rem;
-    line-height: 90px;
-    text-align: center;
-    display: block;
-    margin:0 auto;
-    padding:0;
-    font-family: 'Poiret One', cursive;
-    background-color:rgba(00, 00, 00, 0.5);
-    padding:80px 0;
-
-    span{
-        display: inline-block;
-    }
-  } 
 }
 
 
+.home {
+  background-image: url('../assets/home.jpg'); 
+  display:block;
+
+}
 
 .slideContent{
     width:80%;
     height:100vh;
     margin:0 auto;
     display:flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-content: center;
-
-
-    .buttons{
-        text-align: right;
-        width: 100%;
-        padding-top:60px;
-
-        i{
-          padding-left: 50px;
-          font-size: 1.8rem;
-          color: turquoise;
-          cursor: pointer;
-        }
-      }
-  }
-
-.buttons i:hover {
-    color: white;
-
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
 }
 
-
-
-.title h2 {
-      color:white;
-      font-size: 5rem;
-      font-family: 'Poiret One', cursive;
-      padding-bottom: 50px;
-      font-weight: bold;   
-      letter-spacing: 3px;  
-      text-align: right;
-    }
 
 .description {
     width: 60%;
     border-top: 2px solid turquoise;
     
-
-    p {
-      font-family: 'Open Sans', sans-serif;
-      color:white;
-      font-size: 1.7rem;
-      display: block;
-      padding-top:50px;
-      line-height: 50px;
-      
-    }
 }
 
 
@@ -107,14 +57,14 @@ h1 {
     width: 90%;
     margin: 0 auto;
     padding: 60px;
-    border: 2px solid turquoise;
+    border: 2px solid $blue;
     line-height: 40px;
     position:relative;
     
     p{
-      color: white;
+      color: $light;
       font-size: 1.5rem;
-      font-family: 'Open Sans', sans-serif;
+      font-family: $alt-font;
       margin:15px 0;
       }
 }
@@ -132,9 +82,9 @@ h1 {
   top: -30px;
   right: -6px;
   font-size: 1.8rem;
-  color:grey;
+  color: $dark;
   cursor:pointer;
-  font-family: 'Open Sans', sans-serif;
+  font-family: $alt-font;
 
 }
 
@@ -145,7 +95,7 @@ h1 {
 
 
 .close:hover{
-  color:white;
+  color:$light;
 }
 
 
@@ -179,15 +129,15 @@ h1 {
   top:50%;
   cursor:pointer;
   z-index: 99;
-  background-color:transparent;
-  border: 1px solid white;
+  background-color:$light;
+  border: 1px solid $light;
   border-radius: 25px;
   padding:4px;
 
 }
 
 .containerArrow img:hover{
-  background-color: turquoise;
+  background-color: $blue;
 
 }
 
@@ -330,67 +280,3 @@ h1 {
 
 
 
-// mediaQueries
-
-
-  @media(max-width:915px){
-
-
-    .slideContent{
-        width:80%;
-        text-align: center;
-        display: block;
-        padding:50px;
-        
-    }
-
-
-    .home h1{
-      font-size: 4rem;
-     
-    }
-
-    .description {
-        width: 100%;
-        
-    }
-
-    p{
-        text-align: center;
-        font-size: 1.5rem;
-        
-    }
-
-    .title h2{
-        width:100%;
-        padding-top:100px;
-        text-align:center;
-           
-    }
-
-    .moreInfo {
-      width: 100%;
-      margin: 0 auto;
-      padding: 30px;
-
-      
-      p{
-      
-        font-size: 1.4rem;
-        }
-      
-    }
-
-    .slideContent .buttons{
-      text-align: center;
-      padding-top:80px;
-      margin:0 auto;
-
-      i{
-        padding: 0 40px;
-        text-align: center;
-        margin:0 auto;
-      }
-    }
- 
-  }
