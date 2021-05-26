@@ -215,7 +215,7 @@ textarea {
 h1,
 h2 {
   color: white;
-  font-size: 5rem;
+  font-size: 6rem;
   font-family: "Poiret One", cursive;
 }
 
@@ -223,12 +223,12 @@ h1 {
   line-height: 90px;
   display: block;
   margin: 0 auto;
-  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
 }
 
 h2 {
   font-weight: bold;
   letter-spacing: 3px;
+  font-size: 5.5rem;
 }
 
 h3 {
@@ -474,7 +474,7 @@ body,
 }
 
 .title p {
-  color: grey;
+  color: silver;
   font-style: italic;
   padding: 20px 0;
 }
@@ -485,7 +485,7 @@ body,
 }
 
 .description p {
-  padding: 10px 0;
+  padding: 10px;
 }
 
 .moreInfo {
