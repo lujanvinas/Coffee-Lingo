@@ -1,52 +1,133 @@
 // document ready
 $(document).ready(function(){
-    const coffeeTypes = $('#coffeeTypes');
+    const rightArrow = $('.arrowRight')
+    const leftArrow = $('.arrowLeft')
+    const first = $('.containerSlider').children().first();
+    const last = $('.containerSlider').children().last();
+    
+    
+    if(first.hasClass('active')) {
+        leftArrow.css('display', 'none')
+        rightArrow.css('display', 'none')
+    }
+    
+    // Coffee Pop Up 
+    const coffeePopUp = $('.coffeePopUp')
     const coffeeSelection = $('#coffeeSelection');
+    const overlay = $('#background');
 
-    coffeeTypes.hide();
+    coffeePopUp.hide();
 
-    coffeeSelection.on('click', function(){
-        coffeeTypes.slideToggle(500);
-        coffeeSelection.css('border-radius', '10px 10px 0 0');
+    // show coffee pop up
+    function showCoffeePopUp() {
+        coffeePopUp.fadeIn(500);
+        overlay.addClass('overlay');
+    };
+
+    // hide coffee pop up
+    function hideCoffeePopUp() {
+        coffeePopUp.hide();
+        overlay.removeClass('overlay');
+    }
+
+    const closeCoffeePopUp = $('.closePopUp')
+
+    coffeeSelection.on('click', showCoffeePopUp);
+    closeCoffeePopUp.on('click', hideCoffeePopUp);
+
+
+    // go to selected coffee
+
+    // hide home page
+    function hideAll() {
+        hideCoffeePopUp();
+        $('.home').css('display', 'none');
+        $('.slide1').css('display', 'none');
+        $('.slide2').css('display', 'none');
+        $('.slide3').css('display', 'none');
+        $('.slide4').css('display', 'none');
+        $('.slide5').css('display', 'none');
+
+    }
+
+
+    $('.option1').on('click', function(){
+        hideAll();
+        $('.slide1').css('display', 'block');
+        // showArrows()
     })
 
-    const slider = $('.slide');
-    const home = slider[0];
-    console.log(home)
+    $('.option2').on('click', function(){
+        hideAll();
+        $('.slide2').css('display', 'block');
+        // showArrows()
+    })
 
-    
-    
+    $('.option3').on('click', function(){
+        hideAll();
+        $('.slide3').css('display', 'block');
+        // showArrows()
+    })
 
-    // next slide
-    // const currentSlide = $('.active');
-    // const nextSlide = currentSlide.next();
-    // const prevSlide = currentSlide.prev();
-    const nextArr = $('.next');
-    const prevArr = $('.prev');
+    $('.option4').on('click', function(){
+        hideAll();
+        $('.slide4').css('display', 'block');
+        // showArrows()
+    })
+    $('.option5').on('click', function(){
+        hideAll();
+        $('.slide5').css('display', 'block');
+        // showArrows()
+    })
 
-    // Right arrow click
-    nextArr.on('click', function() {
-        const currentSlide = $('.active');
+
+    // Show arrows
+    function showArrows() {
+        rightArrow.show();
+        leftArrow.show();
+    }
+   
+
+    function hideArrows() {
+        rightArrow.hide();
+        leftArrow.hide();
+    }
+
+     // Event listener: next slide
+    $('.next').on('click', nextSlide);
+
+
+    // Next Slide - Right
+    function nextSlide(){
+        let currentSlide = $('.active');
         const nextSlide = currentSlide.next();
 
         if(nextSlide.length){
+            showArrows()
             currentSlide.removeClass('active').css('display', 'none');
             nextSlide.addClass('active').css('display', 'block');
+        } 
+        else {
+            currentSlide = $('.home')
+            currentSlide.addClass('active').css('display', 'block');
+            hideArrows();
         }
-    });
+    }
+    
+    // Last arrow
 
-    // prev slide
-    prevArr.on('click', function() {
-        const currentSlide = $('.active');
+    // Previous slide- left 
+    $('.prev').on('click', prevSlide);
+    
+    function prevSlide() {
+        let currentSlide = $('.active');
         const prevSlide = currentSlide.prev();
         
         if(prevSlide.length){         
             currentSlide.removeClass('active').css('display', 'none');
             prevSlide.addClass('active').css('display', 'block');
-            }
-
-    });
-
+            } 
+        }
 
     // video pop up / more info
     $('.videoPopup').hide();
@@ -56,7 +137,7 @@ $(document).ready(function(){
     $('.fa-video').on('click', function(){
         $('.videoPopup').show();
         $('.description').hide();
-        $('.icons').hide();
+        $('.icon').hide();
         $('.next').hide();
         $('.prev').hide();
         $('h2').hide();
@@ -68,7 +149,7 @@ $(document).ready(function(){
     $('.close').on('click', function(){
         $('.videoPopup').hide();
         $('.description').show();
-        $('.icons').show();
+        $('.icon').show();
         $('.next').show();
         $('.prev').show();
         $('h2').show();
@@ -78,7 +159,7 @@ $(document).ready(function(){
     $('.fa-info').on('click', function(){
         $('.moreInfo').show();
         $('.description').hide();
-        $('.icons').hide();
+        $('.icon').hide();
         $('.next').hide();
         $('.prev').hide();
         $('h2').hide();
@@ -87,7 +168,7 @@ $(document).ready(function(){
     $('.closeInfo').on('click', function(){
         $('.moreInfo').hide();
         $('.description').show();
-        $('.icons').show();
+        $('.icon').show();
         $('.next').show();
         $('.prev').show();
         $('h2').show();

@@ -25,9 +25,9 @@
                     <div class="header">
                         <h1 class="text-center">Solving the Coffee Mystery</h1>
                     </div>
-                    <div class="containerSelection">
-                        <button id="coffeeSelection" class="btn text-center">Choose your coffee <span><i class="fas fa-angle-down"></i></span></button>
-                        <div class="dropdown">
+                    <div id="background">
+                        <div class="coffeePopUp">
+                            <div class="closePopUp"><i class="fas fa-times"></i></div>
                             <ul id="coffeeTypes">
                                 <li class="option option1 text-center">Espresso</li>
                                 <li class="option option2 text-center">Americano</li>
@@ -37,12 +37,14 @@
                             </ul>
                         </div>
                     </div>
-                    <div class="or">
-                        <p>or...</p>
-                    </div>
-                    <div class="tour">
-                        <button class=" next btn text-center" >
-                        Take a tour </button>
+                    <div class="buttons">
+                        <div class="containerSelection">
+                            <button id="coffeeSelection" class="btn text-center">Choose your coffee</button>
+                        </div>
+                        <div class="tour">
+                            <button class=" next btn text-center" >
+                                Take a tour </button>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -50,12 +52,13 @@
         <div class="slide slide1">
             <div class="slideContent">
                 <div class="title">
-                    <h2>Espresso</h2>
+                    <h2>espresso</h2>
+                    <span><p>[eˈsprɛsso]</p></span>
                 </div>
                 <div class="description">
                     <p class="text-focus-in">Straight and simple. A full-flavored, concentrated form of coffee that is served in single or double shots.</p>
                 </div>
-                <div class="icons">
+                <div class="icon">
                     <i class="fas fa-info"></i>
                     <i class="fas fa-video"></i>
                     <i class="fas fa-home"></i>
@@ -75,7 +78,8 @@
         <div class="slide slide2">
             <div class="slideContent">
                 <div class="title">
-                    <h2>Americano</h2>
+                    <h2>americano</h2>
+                    <span><p>[ameriˈkaːno]</p></span>
                 </div>
                 <div class="description">
                     <p class="text-focus-in">A watered-down single or double espresso, literally.</p>
@@ -100,7 +104,8 @@
         <div class="slide slide3">
             <div class="slideContent">
                 <div class="title">
-                    <h2>Latte</h2>
+                    <h2>latte</h2>
+                    <span><p>[kaffeˈlatte]</p></span>
                 </div>
                 <div class="description">
                     <p class="text-focus-in">Typically two shots of espresso served in a big mug, complete with steamed milk and a tiny bit of foam.</p>
@@ -125,7 +130,8 @@
         <div class="slide slide4">
             <div class="slideContent">
                 <div class="title">
-                    <h2>Cappuccino</h2>
+                    <h2>cappuccino</h2>
+                    <span><p>[kapputˈtʃiːno]</p></span>
                 </div>               
                 <div class="description">
                     <p class="text-focus-in">Double shot of espresso, steamed milk and a lot of foam.</p>
@@ -150,7 +156,8 @@
         <div class="slide slide5">
             <div class="slideContent">
                 <div class="title">
-                    <h2>Macchiato</h2>
+                    <h2>macchiato</h2>
+                    <span><p>[kafˈfɛ mmakˈkjaːto]</p></span>
                 </div>
                 <div class="description">
                     <p class="text-focus-in">"Stained" in Italian. Add a splash of steamed milk to a single or double espresso.</p>
