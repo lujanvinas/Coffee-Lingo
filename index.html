@@ -19,7 +19,7 @@
     </div>
 
     <div class="containerSlider">
-        <div class="slide home active">
+        <div id="home" class="slide home active">
             <div class="homeContainer">
                 <div class="slideContent">
                     <div class="header">
@@ -49,7 +49,7 @@
                 </div>
             </div>
         </div>
-        <div class="slide slide1">
+        <div id="Espresso" class="slide slide1">
             <div class="slideContent">
                 <div class="title">
                     <h2>espresso</h2>
@@ -81,7 +81,7 @@
                 </div>
             </div>
         </div>
-        <div class="slide slide2">
+        <div id="Americano" class="slide slide2">
             <div class="slideContent">
                 <div class="title">
                     <h2>americano</h2>
@@ -98,20 +98,22 @@
                 <div class="background">
                     <div class="moreInfo popUp">
                         <div class="closePopUp"><i class="fas fa-times"></i></div>  
-                        <p>The drink consists of a single or double shot of espresso brewed with added water. Typically between 28 and 455 ml of hot water is added to the double espresso.</p>
-                        <p>Did you know?</p>
-                        <p>It is believed that the term "caffè Americano" has its origins in World War II when American soldiers in Italy would dilute espresso with hot water to approximate the coffee to which they were accustomed.</p>
+                        <div class="infoContainer">
+                            <p>The drink consists of a single or double shot of espresso brewed with added water. Typically between 28 and 455 ml of hot water is added to the double espresso.</p>
+                            <p>Did you know?</p>
+                            <p>It is believed that the term "caffè Americano" has its origins in World War II when American soldiers in Italy would dilute espresso with hot water to approximate the coffee to which they were accustomed.</p>
+                        </div>
                     </div>
                 </div>
-                <div class="background">
-                    <div class="video popUp">
-                        <div class="closePopUp"><i class="fas fa-times"></i></div>  
+                <div class="videoBackground">
+                    <div class="videoContainer">
+                        <div class="closeVideo"><i class="fas fa-times"></i></div>  
                         <video src="./assets/americano.mp4" controls muted autoplay height="600" width="900" class="video">Your browser does not support the video element.</video>
                     </div>
                 </div>
             </div>
         </div>       
-        <div class="slide slide3">
+        <div id="Latte" class="slide slide3">
             <div class="slideContent">
                 <div class="title">
                     <h2>latte</h2>
@@ -128,20 +130,22 @@
                 <div class="background">
                     <div class="moreInfo popUp">
                         <div class="closePopUp"><i class="fas fa-times"></i></div> 
-                        <p>Caffè latte is typically prepared in a 240 mL cup with a single or double shot of espresso and filled with steamed milk.</p>
-                        <p>Did you know?</p>
-                        <p>In Italy, caffè latte is almost always prepared at home, for breakfast only.</p>
+                        <div class="infoContainer">
+                            <p>Caffè latte is typically prepared in a 240 mL cup with a single or double shot of espresso and filled with steamed milk.</p>
+                            <p>Did you know?</p>
+                            <p>In Italy, caffè latte is almost always prepared at home, for breakfast only.</p>
+                        </div>
                     </div>
                 </div>
-                <div class="background">
-                    <div class="video popUp">
-                        <div class="closePopUp"><i class="fas fa-times"></i></div> 
+                <div class="videoBackground">
+                    <div class="videoContainer">
+                        <div class="closeVideo"><i class="fas fa-times"></i></div> 
                         <video src="./assets/latte.mp4" controls muted autoplay height="600" width="900" class="video">Your browser does not support the video element.</video>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="slide slide4">
+        <div id="Cappuccino" class="slide slide4">
             <div class="slideContent">
                 <div class="title">
                     <h2>cappuccino</h2>
@@ -158,20 +162,22 @@
                 <div class="background">
                     <div class="moreInfo popUp">
                         <div class="closePopUp"><i class="fas fa-times"></i></div> 
-                        <p>Cappuccino is typically composed of a double espresso shot and hot milk, with the surface topped with foamed milk.</p>
-                        <p>Did you know?</p>
-                        <p> In Italy it is very common to hear people refer to the cappuccino as "cappuccio".</p>
+                        <div class="infoContainer">
+                            <p>Cappuccino is typically composed of a double espresso shot and hot milk, with the surface topped with foamed milk.</p>
+                            <p>Did you know?</p>
+                            <p> In Italy it is very common to hear people refer to the cappuccino as "cappuccio".</p>
+                        </div>
                     </div>
                 </div>
-                <div class="background">
-                    <div class="video popUp">
-                        <div class="closePopUp"><i class="fas fa-times"></i></div> 
+                <div class="videoBackground">
+                    <div class="videoContainer">
+                        <div class="closeVideo"><i class="fas fa-times"></i></div> 
                         <video src="./assets/capuccino.mp4" controls muted autoplay height="600" width="900" class="video">Your browser does not support the video element.</video>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="slide slide5">
+        <div id="Macchiato" class="slide slide5">
             <div class="slideContent">
                 <div class="title">
                     <h2>macchiato</h2>
@@ -183,9 +189,11 @@
                 <div class="background">
                     <div class="moreInfo popUp">
                         <div class="closePopUp"><i class="fas fa-times"></i></div> 
-                        <p> The espresso macchiato has the highest ratio of espresso to milk of any drink made with those ingredients. The intent is that the milk moderates, rather than overwhelms, the taste of the coffee while adding a touch of sweetness.</p>
-                        <p><i>Did you know?</i></p>
-                        <p> The equivalent of espresso macchiatto is "café cortado" in Spanish or "café pingado" in Portuguese.</p>
+                        <div class="infoContainer">
+                            <p> The espresso macchiato has the highest ratio of espresso to milk of any drink made with those ingredients. The intent is that the milk moderates, rather than overwhelms, the taste of the coffee while adding a touch of sweetness.</p>
+                            <p><i>Did you know?</i></p>
+                            <p> The equivalent of espresso macchiatto is "café cortado" in Spanish or "café pingado" in Portuguese.</p>
+                        </div>
                     </div>
                 </div>
                     <div class="icon">
@@ -193,9 +201,9 @@
                     <i class="fas fa-video"></i>
                     <i class="fas fa-home"></i>
                 </div>
-                <div class="background">
-                    <div class="video popUp">
-                        <div class="closePopUp"><i class="fas fa-times"></i></div> 
+                <div class="videoBackground">
+                    <div class="videoContainer">
+                        <div class="closeVideo"><i class="fas fa-times"></i></div> 
                         <video src="./assets/macchiato.mp4" controls muted autoplay height="600" width="900" class="video">Your browser does not support the video element.</video>
                     </div>
                 </div>
