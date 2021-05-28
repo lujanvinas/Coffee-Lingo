@@ -1,0 +1,53 @@
+// Slides - styles
+
+.slide1 {
+    background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.1), rgba(0, 0, 0, 0.8)), url(../assets/espresso2.jpg);
+}
+
+
+.slide2 {
+background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.1), rgba(0, 0, 0, 0.8)), url('../assets/americano.jpg');
+}
+
+.slide3 {
+background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.1), rgba(0, 0, 0, 0.8)), url('../assets/latte.jpg');
+}
+
+.slide4 {
+background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.1), rgba(0, 0, 0, 0.8)), url('../assets/capuccino.jpg');
+}
+
+.slide5 {
+background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.1), rgba(0, 0, 0, 0.8)), url('../assets/macchiato.jpg');
+}
+
+
+
+.title {
+    text-align: left;
+    width: 80%;
+    border-bottom: 2px solid $blue;
+
+p {
+    color: silver;
+    font-style: italic;
+    padding: 20px 0;
+}
+}
+
+.description {
+    width: 80%;
+    text-align: left;
+    
+    p {
+    padding: 10px
+    }
+}
+
+
+.video {
+    position:relative;
+    margin:0 auto;
+}
+
+

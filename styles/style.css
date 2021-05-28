@@ -212,6 +212,60 @@ textarea {
   overflow: hidden;
 }
 
+body,
+.slide,
+.containerSlider {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100vh;
+}
+
+.slide {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: none;
+  position: relative;
+  display: none;
+}
+
+.slideContent {
+  width: 80%;
+  height: 100vh;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  margin: 0 auto;
+  width: 50%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
 h1,
 h2 {
   color: white;
@@ -378,66 +432,6 @@ li:hover {
   cursor: pointer;
 }
 
-@media (max-width: 915px) {
-  .slideContent {
-    width: 80%;
-    text-align: center;
-    display: block;
-    padding: 50px;
-  }
-  h1 {
-    font-size: 4rem;
-  }
-  .description {
-    width: 100%;
-  }
-  p {
-    text-align: center;
-    font-size: 1.5rem;
-  }
-  .title h2 {
-    width: 100%;
-    padding-top: 100px;
-    text-align: center;
-  }
-  .moreInfo {
-    width: 100%;
-    margin: 0 auto;
-    padding: 30px;
-  }
-  .moreInfo p {
-    font-size: 1.4rem;
-  }
-  .slideContent .icon {
-    text-align: center;
-    padding-top: 80px;
-    margin: 0 auto;
-  }
-  .slideContent .icon i {
-    padding: 0 40px;
-    text-align: center;
-    margin: 0 auto;
-  }
-}
-
-body,
-.slide,
-.containerSlider {
-  margin: 0;
-  padding: 0;
-  width: 100%;
-  height: 100vh;
-}
-
-.slide {
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  display: none;
-  position: relative;
-  display: none;
-}
-
 .homeContainer {
   background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.7)), to(rgba(0, 0, 0, 0.1)));
   background: linear-gradient(to bottom, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.1));
@@ -448,40 +442,29 @@ body,
   display: block;
 }
 
-.slideContent {
-  width: 80%;
-  height: 100vh;
-  margin: 0 auto;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
-  -ms-flex-line-pack: center;
-      align-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+.slide1 {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.1)), to(rgba(0, 0, 0, 0.8))), url(../assets/espresso2.jpg);
+  background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.1), rgba(0, 0, 0, 0.8)), url(../assets/espresso2.jpg);
 }
 
-.buttons {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  margin: 0 auto;
-  width: 50%;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+.slide2 {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.1)), to(rgba(0, 0, 0, 0.8))), url("../assets/americano.jpg");
+  background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.1), rgba(0, 0, 0, 0.8)), url("../assets/americano.jpg");
+}
+
+.slide3 {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.1)), to(rgba(0, 0, 0, 0.8))), url("../assets/latte.jpg");
+  background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.1), rgba(0, 0, 0, 0.8)), url("../assets/latte.jpg");
+}
+
+.slide4 {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.1)), to(rgba(0, 0, 0, 0.8))), url("../assets/capuccino.jpg");
+  background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.1), rgba(0, 0, 0, 0.8)), url("../assets/capuccino.jpg");
+}
+
+.slide5 {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.1)), to(rgba(0, 0, 0, 0.8))), url("../assets/macchiato.jpg");
+  background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.1), rgba(0, 0, 0, 0.8)), url("../assets/macchiato.jpg");
 }
 
 .title {
@@ -508,31 +491,6 @@ body,
 .video {
   position: relative;
   margin: 0 auto;
-}
-
-.slide1 {
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.1)), to(rgba(0, 0, 0, 0.8))), url(../assets/espresso2.jpg);
-  background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.1), rgba(0, 0, 0, 0.8)), url(../assets/espresso2.jpg);
-}
-
-.slide2 {
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.1)), to(rgba(0, 0, 0, 0.8))), url("../assets/americano.jpg");
-  background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.1), rgba(0, 0, 0, 0.8)), url("../assets/americano.jpg");
-}
-
-.slide3 {
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.1)), to(rgba(0, 0, 0, 0.8))), url("../assets/latte.jpg");
-  background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.1), rgba(0, 0, 0, 0.8)), url("../assets/latte.jpg");
-}
-
-.slide4 {
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.1)), to(rgba(0, 0, 0, 0.8))), url("../assets/capuccino.jpg");
-  background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.1), rgba(0, 0, 0, 0.8)), url("../assets/capuccino.jpg");
-}
-
-.slide5 {
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.1)), to(rgba(0, 0, 0, 0.8))), url("../assets/macchiato.jpg");
-  background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.1), rgba(0, 0, 0, 0.8)), url("../assets/macchiato.jpg");
 }
 
 .containerArrow img {
@@ -651,16 +609,16 @@ body,
 }
 
 /* ----------------------------------------------
- * Generated by Animista on 2020-7-25 16:13:11
- * Licensed under FreeBSD License.
- * See http://animista.net/license for more info. 
- * w: http://animista.net, t: @cssanimista
- * ---------------------------------------------- */
+* Generated by Animista on 2020-7-25 16:13:11
+* Licensed under FreeBSD License.
+* See http://animista.net/license for more info. 
+* w: http://animista.net, t: @cssanimista
+* ---------------------------------------------- */
 /**
- * ----------------------------------------
- * animation text-focus-in
- * ----------------------------------------
- */
+* ----------------------------------------
+* animation text-focus-in
+* ----------------------------------------
+*/
 @-webkit-keyframes text-focus-in {
   0% {
     -webkit-filter: blur(12px);
@@ -684,6 +642,48 @@ body,
     -webkit-filter: blur(0px);
     filter: blur(0px);
     opacity: 1;
+  }
+}
+
+@media (max-width: 915px) {
+  .slideContent {
+    width: 80%;
+    text-align: center;
+    display: block;
+    padding: 50px;
+  }
+  h1 {
+    font-size: 4rem;
+  }
+  .description {
+    width: 100%;
+  }
+  p {
+    text-align: center;
+    font-size: 1.5rem;
+  }
+  .title h2 {
+    width: 100%;
+    padding-top: 100px;
+    text-align: center;
+  }
+  .moreInfo {
+    width: 100%;
+    margin: 0 auto;
+    padding: 30px;
+  }
+  .moreInfo p {
+    font-size: 1.4rem;
+  }
+  .slideContent .icon {
+    text-align: center;
+    padding-top: 80px;
+    margin: 0 auto;
+  }
+  .slideContent .icon i {
+    padding: 0 40px;
+    text-align: center;
+    margin: 0 auto;
   }
 }
 /*# sourceMappingURL=style.css.map */
