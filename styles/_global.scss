@@ -99,7 +99,8 @@ p {
 }
 
 
-.closePopUp {
+.closePopUp,
+.closeVideo {
     position: absolute;
     top: -40px;
     right: 0;
@@ -126,11 +127,17 @@ p {
 
 }
 
-.coffeePopUp {
+.popUp,
+.videoContainer {
     position: relative;
 }
 
-ul {
+.moreInfo {
+    width: 70%;
+}
+
+ul,
+.infoContainer {
     background-color: $light;
     border-radius: 10px;
     margin: 0 auto;
@@ -138,6 +145,16 @@ ul {
     font-family: $base-font;
     font-size: 2.5rem;
 }
+
+.infoContainer {
+    padding: 30px;
+    
+    p {
+        color: black;
+        font-size: 1.5rem;
+    }
+}
+
 
 li {
     list-style: none;    

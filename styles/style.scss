@@ -25,7 +25,6 @@ body,
 
 .homeContainer {
   background: linear-gradient(to bottom, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.1));
-
 }
 
 
@@ -55,7 +54,6 @@ body,
 }
 
 
-
 .title {
   text-align: left;
   width: 80%;
@@ -78,52 +76,11 @@ body,
 }
 
 
-.moreInfo {
-    background-color:rgba(00, 00, 00, 0.5);
-    width: 90%;
-    margin: 0 auto;
-    padding: 60px;
-    border: 2px solid $blue;
-    line-height: 40px;
-    position:relative;
-    
-    p{
-      color: $light;
-      font-size: 1.5rem;
-      font-family: $alt-font;
-      margin:15px 0;
-      }
-}
-
-
-.videoPopup {
+.video {
     position:relative;
     margin:0 auto;
 }
   
-.close,
-.closeInfo{
-  position: absolute;
-  padding: 5px;
-  top: -30px;
-  right: -6px;
-  font-size: 1.8rem;
-  color: $dark;
-  cursor:pointer;
-  font-family: $alt-font;
-
-}
-
-.closeInfo{
-  top:-60px;
- 
-}
-
-
-.close:hover{
-  color:$light;
-}
-
 
 
 .slide1 {

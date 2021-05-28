@@ -12,35 +12,35 @@ $(document).ready(function(){
     }
     
     // Coffee Pop Up 
-    const coffeePopUp = $('.coffeePopUp')
+    const popUp = $('.popUp')
     const coffeeSelection = $('#coffeeSelection');
-    const overlay = $('#background');
+    const background = $('.background');
 
-    coffeePopUp.hide();
+    popUp.hide();
 
     // show coffee pop up
-    function showCoffeePopUp() {
-        coffeePopUp.fadeIn(500);
-        overlay.addClass('overlay');
+    function showPopUp() {
+        popUp.fadeIn(500);
+        background.addClass('overlay');
     };
 
     // hide coffee pop up
-    function hideCoffeePopUp() {
-        coffeePopUp.hide();
-        overlay.removeClass('overlay');
+    function hidePopUp() {
+        popUp.hide();
+        background.removeClass('overlay');
     }
 
-    const closeCoffeePopUp = $('.closePopUp')
+    const closePopUp = $('.closePopUp')
 
-    coffeeSelection.on('click', showCoffeePopUp);
-    closeCoffeePopUp.on('click', hideCoffeePopUp);
+    coffeeSelection.on('click', showPopUp);
+    closePopUp.on('click', hidePopUp);
 
 
     // go to selected coffee
 
     // hide home page
     function hideAll() {
-        hideCoffeePopUp();
+        hidePopUp();
         $('.home').css('display', 'none');
         $('.slide1').css('display', 'none');
         $('.slide2').css('display', 'none');
@@ -51,33 +51,29 @@ $(document).ready(function(){
     }
 
 
+    // coffee options- menu
     $('.option1').on('click', function(){
         hideAll();
         $('.slide1').css('display', 'block');
-        // showArrows()
     })
 
     $('.option2').on('click', function(){
         hideAll();
         $('.slide2').css('display', 'block');
-        // showArrows()
     })
 
     $('.option3').on('click', function(){
         hideAll();
         $('.slide3').css('display', 'block');
-        // showArrows()
     })
 
     $('.option4').on('click', function(){
         hideAll();
         $('.slide4').css('display', 'block');
-        // showArrows()
     })
     $('.option5').on('click', function(){
         hideAll();
         $('.slide5').css('display', 'block');
-        // showArrows()
     })
 
 
@@ -87,7 +83,7 @@ $(document).ready(function(){
         leftArrow.show();
     }
    
-
+     // Hide arrows
     function hideArrows() {
         rightArrow.hide();
         leftArrow.hide();
@@ -99,7 +95,7 @@ $(document).ready(function(){
 
     // Next Slide - Right
     function nextSlide(){
-        let currentSlide = $('.active');
+        const currentSlide = $('.active');
         const nextSlide = currentSlide.next();
 
         if(nextSlide.length){
@@ -114,13 +110,12 @@ $(document).ready(function(){
         }
     }
     
-    // Last arrow
 
     // Previous slide- left 
     $('.prev').on('click', prevSlide);
     
     function prevSlide() {
-        let currentSlide = $('.active');
+        const currentSlide = $('.active');
         const prevSlide = currentSlide.prev();
         
         if(prevSlide.length){         
@@ -129,51 +124,75 @@ $(document).ready(function(){
             } 
         }
 
-    // video pop up / more info
-    $('.videoPopup').hide();
-    $('.moreInfo').hide();
+    //  more info
+    const info = $('.fa-info');
 
-
-    $('.fa-video').on('click', function(){
-        $('.videoPopup').show();
-        $('.description').hide();
-        $('.icon').hide();
-        $('.next').hide();
-        $('.prev').hide();
-        $('h2').hide();
-
-    }); 
+    info.on('click', showPopUp);
+    closePopUp.on('click', hidePopUp);
     
 
-    // close video
-    $('.close').on('click', function(){
-        $('.videoPopup').hide();
-        $('.description').show();
-        $('.icon').show();
-        $('.next').show();
-        $('.prev').show();
-        $('h2').show();
-    });
+    // Video
+    const video = $('.fa-video');
+    const videoContainer = $('.videoContainer');
+    const videoBackground = $('.videoBackground');
+    
+    videoContainer.hide();
+    function showVideo(){
+        videoContainer.fadeIn(500);
+        videoBackground.addClass('overlay');
+    }
+    function hideVideo(){
+        videoContainer.hide();
+        videoBackground.removeClass('overlay');
+    }
+
+    const closeVideo = $('.closeVideo')
+    video.on('click', showVideo);
+    closeVideo.on('click', hideVideo);
+
+
+    // $('.fa-video').on('click', function(){
+    //     $('.videoPopup').show();
+    //     $('.description').hide();
+    //     $('.icon').hide();
+    //     $('.next').hide();
+    //     $('.prev').hide();
+    //     $('h2').hide();
+
+    // }); 
+    
+
+    // // close video
+    // $('.close').on('click', function(){
+    //     $('.videoPopup').hide();
+    //     $('.description').show();
+    //     $('.icon').show();
+    //     $('.next').show();
+    //     $('.prev').show();
+    //     $('h2').show();
+    // });
+
+
 
     // more info- show
-    $('.fa-info').on('click', function(){
-        $('.moreInfo').show();
-        $('.description').hide();
-        $('.icon').hide();
-        $('.next').hide();
-        $('.prev').hide();
-        $('h2').hide();
+//     $('.fa-info').on('click', function(){
+//         $('.moreInfo').show();
+//         $('.description').hide();
+//         $('.icon').hide();
+//         $('.next').hide();
+//         $('.prev').hide();
+//         $('h2').hide();
 
 
-    $('.closeInfo').on('click', function(){
-        $('.moreInfo').hide();
-        $('.description').show();
-        $('.icon').show();
-        $('.next').show();
-        $('.prev').show();
-        $('h2').show();
-    })
-});
+//     $('.closeInfo').on('click', function(){
+//         $('.moreInfo').hide();
+//         $('.description').show();
+//         $('.icon').show();
+//         $('.next').show();
+//         $('.prev').show();
+//         $('h2').show();
+//     })
+// });
 
     // listen to a click event that will take the user back to the home page
     $('.fa-home').on('click', function(){

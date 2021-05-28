@@ -303,7 +303,8 @@ p {
   right: 10px;
 }
 
-.closePopUp {
+.closePopUp,
+.closeVideo {
   position: absolute;
   top: -40px;
   right: 0;
@@ -311,7 +312,8 @@ p {
   font-size: 1.8rem;
 }
 
-.closePopUp:hover {
+.closePopUp:hover,
+.closeVideo:hover {
   color: turquoise;
   cursor: pointer;
 }
@@ -338,17 +340,32 @@ p {
   display: flex;
 }
 
-.coffeePopUp {
+.popUp,
+.videoContainer {
   position: relative;
 }
 
-ul {
+.moreInfo {
+  width: 70%;
+}
+
+ul,
+.infoContainer {
   background-color: white;
   border-radius: 10px;
   margin: 0 auto;
   padding: 50px 120px;
   font-family: "Poiret One", cursive;
   font-size: 2.5rem;
+}
+
+.infoContainer {
+  padding: 30px;
+}
+
+.infoContainer p {
+  color: black;
+  font-size: 1.5rem;
 }
 
 li {
@@ -488,46 +505,9 @@ body,
   padding: 10px;
 }
 
-.moreInfo {
-  background-color: rgba(0, 0, 0, 0.5);
-  width: 90%;
-  margin: 0 auto;
-  padding: 60px;
-  border: 2px solid turquoise;
-  line-height: 40px;
-  position: relative;
-}
-
-.moreInfo p {
-  color: white;
-  font-size: 1.5rem;
-  font-family: "Open Sans", sans-serif;
-  margin: 15px 0;
-}
-
-.videoPopup {
+.video {
   position: relative;
   margin: 0 auto;
-}
-
-.close,
-.closeInfo {
-  position: absolute;
-  padding: 5px;
-  top: -30px;
-  right: -6px;
-  font-size: 1.8rem;
-  color: grey;
-  cursor: pointer;
-  font-family: "Open Sans", sans-serif;
-}
-
-.closeInfo {
-  top: -60px;
-}
-
-.close:hover {
-  color: white;
 }
 
 .slide1 {
