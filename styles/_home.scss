@@ -2,11 +2,26 @@
 
 .homeContainer {
     background: linear-gradient(to bottom, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.1));
-  }
-  
-  
-  .home {
-    background-image: url('../assets/home.jpg'); 
-    display:block;
-  }
-  
+}
+
+
+.home {
+background-image: url('../assets/home.jpg'); 
+display:block;
+
+}
+
+
+.header {
+    margin: 0 auto;   
+    width: 100%;
+}
+
+
+.buttons {
+    display: flex;
+    flex-direction: row;
+    margin: 0 auto;
+    width: 70%;
+    justify-content: space-evenly;
+}

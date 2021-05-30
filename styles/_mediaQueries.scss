@@ -1,64 +1,142 @@
 // mediaQueries
 
 
-@media(max-width:915px){
+@media(max-width: 1024px) {
 
-
-    .slideContent{
-        width:80%;
-        text-align: center;
-        display: block;
-        padding:50px;
-        
+  .buttons {
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    align-content: flex-end;
+    
+    button {
+      margin: 20px 0;
     }
 
+    }
 
-    h1{
+    .slideContent {
+      width: 90%;
+    }
+
+  }
+
+  @media(max-width: 780px) {
+
+    h1 {
+      font-size: 4.5rem;
+    }
+
+    h2 {
+      font-size: 4.2rem;
+    }
+
+    p {
+      font-size: 1.5rem;
+    }
+
+    ul {
+      font-size: 2.3rem;
+    }
+    
+    .title,
+    span,
+    .description,
+    .icon {
+      text-align: center;
+    }
+
+    .title p {
+    padding: 0;
+    
+    }
+
+    .infoContainer {
+      padding: 20px;
+
+      p {
+        font-size: 1.2rem;
+
+      }
+    } 
+
+
+    .icon {
+      padding: 0;
+      position: absolute;
+      bottom: 30px;
+
+        i {
+        padding: 20px;
+      }
+    }
+
+    .arrowLeft img {
+      left: 10px;
+    }
+
+    .arrowRight img {
+      right: 10px;
+    }
+
+  }
+
+  @media(max-width: 600px) {
+
+    h1 {
       font-size: 4rem;
-     
     }
 
-    .description {
-        width: 100%;
-        
+    h2 {
+      font-size: 3.8rem;
     }
 
-    p{
-        text-align: center;
-        font-size: 1.5rem;
-        
+    span p{
+      font-size: 1rem;
+      padding: 0;
     }
 
-    .title h2{
-        width:100%;
-        padding-top:100px;
-        text-align:center;
-           
+    p {
+      font-size: 1.4rem;
+      line-height: 40px;
     }
 
     .moreInfo {
-      width: 100%;
-      margin: 0 auto;
-      padding: 30px;
+      width: 95%;
 
-      
-      p{
-      
-        font-size: 1.4rem;
-        }
-      
-    }
-
-    .slideContent .icon{
-      text-align: center;
-      padding-top:80px;
-      margin:0 auto;
-
-      i{
-        padding: 0 40px;
-        text-align: center;
-        margin:0 auto;
+      p {
+        line-height: 30px;
       }
     }
- 
+
+    .containerArrow img {
+      width: 38px;
+    
+    }
+
+    .icon i {
+      font-size: 1.5rem;
+  }
+
+  }
+
+  @media(max-width: 450px) {
+
+    h1 {
+      font-size: 3.5rem;
+    }
+
+    h2 {
+      font-size: 3.2rem;
+    }
+
+    p {
+      font-size: 1.4rem;
+    }
+
+    .containerArrow img {
+      width: 32px;
+    
+    }
+
   }
